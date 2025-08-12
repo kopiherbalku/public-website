@@ -35,7 +35,7 @@ const Aboutdata: datatype[] = [
 
 const Features = () => {
 	return (
-		<div className="bg-babyblue" id="features">
+		<div className="bg-babyblue" id="products">
 			<div className="mx-auto max-w-2xl py-20 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
 				<h3 className="text-4xl sm:text-5xl font-semibold text-black text-center my-10">
 					Produk Kopi Kami

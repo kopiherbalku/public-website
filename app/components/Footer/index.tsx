@@ -3,6 +3,7 @@ import Image from "next/image";
 
 interface links {
 	link: string;
+	name: string;
 }
 
 interface socialLinks {
@@ -14,27 +15,33 @@ interface socialLinks {
 const socialLinks: socialLinks[] = [
 	{
 		imgSrc: "/assets/footer/facebook.svg",
-		link: "www.facebook.com",
+		link: "https://www.facebook.com",
 		width: 10,
 	},
 	{
 		imgSrc: "/assets/footer/instagram.svg",
-		link: "www.instagram.com",
+		link: "https://www.instagram.com",
 		width: 14,
 	},
 	{
 		imgSrc: "/assets/footer/twitter.svg",
-		link: "www.twitter.com",
+		link: "https://www.twitter.com",
 		width: 14,
 	},
 ];
 
 const links: links[] = [
 	{
-		link: "Product",
+		link: "#",
+		name: "Home",
 	},
 	{
-		link: "Pricing",
+		link: "#products",
+		name: "Product",
+	},
+	{
+		link: "#pricing",
+		name: "Pricing",
 	},
 ];
 
@@ -61,10 +68,10 @@ const footer = () => {
 							{links.map((items, i) => (
 								<div key={i}>
 									<Link
-										href="/"
+										href={items.link}
 										className="text-lg font-normal text-white flex items-center justify-center"
 									>
-										{items.link}
+										{items.name}
 									</Link>
 								</div>
 							))}
@@ -74,7 +81,7 @@ const footer = () => {
 					<div className="sm:col-span-6 lg:col-span-4">
 						<div className="flex gap-4 lg:justify-end">
 							{socialLinks.map((items, i) => (
-								<Link href={items.link} key={i}>
+								<Link href={items.link} target="_blank" key={i}>
 									<div className="socialBg h-12 w-12 shadow-xl text-base rounded-full flex items-center justify-center footer-icons hover:bg-white">
 										<Image
 											src={items.imgSrc}
@@ -96,7 +103,7 @@ const footer = () => {
 					<h4 className="text-lg text-center md:text-start font-normal text-white opacity-60">
 						@2025.Kopi HerbalKu.All rights reserved
 					</h4>
-					<div className="flex gap-5 mt-6 md:mt-0 justify-center md:justify-start">
+					{/* <div className="flex gap-5 mt-6 md:mt-0 justify-center md:justify-start">
 						<h4 className="opacity-60 text-lg font-normal text-white">
 							<Link href="/" target="_blank">
 								Privacy policy
@@ -108,7 +115,7 @@ const footer = () => {
 								Terms & conditions
 							</Link>
 						</h4>
-					</div>
+					</div> */}
 				</div>
 			</div>
 		</div>
