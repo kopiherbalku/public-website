@@ -8,7 +8,12 @@ const names = [
 		price: 41,
 		subscriber: 0.5,
 		button: "Start free trial",
-		option: "Sed ut perspiciatis unde",
+		option: [
+			"Sed ut perspiciatis unde1",
+			"Sed ut perspiciatis unde2",
+			"Sed ut perspiciatis unde3",
+			"Sed ut perspiciatis unde4",
+		],
 		category: "yearly",
 		imgSrc: "/assets/pricing/starone.svg",
 	},
@@ -17,7 +22,12 @@ const names = [
 		price: 29,
 		subscriber: 0.5,
 		button: "Start free trial",
-		option: "Sed ut perspiciatis unde",
+		option: [
+			"Sed ut perspiciatis unde1",
+			"Sed ut perspiciatis unde2",
+			"Sed ut perspiciatis unde3",
+			"Sed ut perspiciatis unde4",
+		],
 		category: "yearly",
 		imgSrc: "/assets/pricing/startwo.svg",
 	},
@@ -26,7 +36,12 @@ const names = [
 		price: 139,
 		subscriber: 0.5,
 		button: "Start free trial",
-		option: "Sed ut perspiciatis unde",
+		option: [
+			"Sed ut perspiciatis unde1",
+			"Sed ut perspiciatis unde2",
+			"Sed ut perspiciatis unde3",
+			"Sed ut perspiciatis unde4",
+		],
 		category: "yearly",
 		imgSrc: "/assets/pricing/starthree.svg",
 	},
@@ -35,7 +50,12 @@ const names = [
 		price: 139,
 		subscriber: 0.5,
 		button: "Start free trial",
-		option: "Sed ut perspiciatis unde",
+		option: [
+			"Sed ut perspiciatis unde1",
+			"Sed ut perspiciatis unde2",
+			"Sed ut perspiciatis unde3",
+			"Sed ut perspiciatis unde4",
+		],
 		category: "monthly",
 		imgSrc: "/assets/pricing/starone.svg",
 	},
@@ -44,7 +64,12 @@ const names = [
 		price: 41,
 		subscriber: 0.5,
 		button: "Start free trial",
-		option: "Sed ut perspiciatis unde",
+		option: [
+			"Sed ut perspiciatis unde1",
+			"Sed ut perspiciatis unde2",
+			"Sed ut perspiciatis unde3",
+			"Sed ut perspiciatis unde4",
+		],
 		category: "monthly",
 		imgSrc: "/assets/pricing/startwo.svg",
 	},
@@ -53,7 +78,12 @@ const names = [
 		price: 29,
 		subscriber: 0.5,
 		button: "Start free trial",
-		option: "Sed ut perspiciatis unde",
+		option: [
+			"Sed ut perspiciatis unde1",
+			"Sed ut perspiciatis unde2",
+			"Sed ut perspiciatis unde3",
+			"Sed ut perspiciatis unde4",
+		],
 		category: "monthly",
 		imgSrc: "/assets/pricing/starthree.svg",
 	},
@@ -139,51 +169,19 @@ const Pricing = () => {
 							<p className="text-lg font-normal text-black opacity-40 mb-6 group-hover:text-white">
 								(per subscriber per month)
 							</p>
-
-							<div className="flex gap-4">
-								<Image
-									src="/assets/pricing/tick.svg"
-									alt="tick-image"
-									width={32}
-									height={32}
-								/>
-								<p className="text-lg font-medium text-black opacity-60 group-hover:text-translucentwhite">
-									{item.option}
-								</p>
-							</div>
-							<div className="flex gap-4 pt-6">
-								<Image
-									src="/assets/pricing/tick.svg"
-									alt="tick-image"
-									width={32}
-									height={32}
-								/>
-								<p className="text-lg font-medium text-black opacity-60 group-hover:text-translucentwhite">
-									{item.option}
-								</p>
-							</div>
-							<div className="flex gap-4 pt-6">
-								<Image
-									src="/assets/pricing/tick.svg"
-									alt="tick-image"
-									width={32}
-									height={32}
-								/>
-								<p className="text-lg font-medium text-black opacity-60 group-hover:text-translucentwhite">
-									{item.option}
-								</p>
-							</div>
-							<div className="flex gap-4 pt-6">
-								<Image
-									src="/assets/pricing/tick.svg"
-									alt="tick-image"
-									width={32}
-									height={32}
-								/>
-								<p className="text-lg font-medium text-black opacity-60 group-hover:text-translucentwhite">
-									{item.option}
-								</p>
-							</div>
+							{item.option.map((content, index) => (
+								<div className="flex gap-4 pt-6" key={index}>
+									<Image
+										src="/assets/pricing/tick.svg"
+										alt="tick-image"
+										width={32}
+										height={32}
+									/>
+									<p className="text-lg font-medium text-black opacity-60 group-hover:text-translucentwhite">
+										{content}
+									</p>
+								</div>
+							))}
 						</div>
 					))}
 				</div>

@@ -11,8 +11,8 @@ export default function Home() {
 			<Banner />
 			{/* <People /> */}
 			<Features />
-			{/* <Business />
-			<Payment /> */}
+			{/* <Business /> */}
+			{/* <Payment /> */}
 			<Pricing />
 		</main>
 	);

@@ -37,7 +37,7 @@ const links: links[] = [
 	},
 	{
 		link: "#products",
-		name: "Product",
+		name: "Products",
 	},
 	{
 		link: "#pricing",
