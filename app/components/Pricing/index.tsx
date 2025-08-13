@@ -101,17 +101,17 @@ const Pricing = () => {
 	);
 
 	return (
-		<div id="pricing" className="bg-floral_white-600 relative py-10">
-			<div className="mx-auto max-w-7xl sm:py-20 lg:px-8 my-16">
-				<h3 className="text-center text-4xl sm:text-65xl font-black">
-					Our Pricing Plan.
+		<div id="pricing" className="bg-floral_white-600 relative">
+			<div className="mx-auto max-w-7xl sm:py-20 lg:px-8">
+				<h3 className="text-4xl sm:text-5xl font-semibold text-black text-center my-10">
+					Our Pricing Plan
 				</h3>
-
-				<p className="text-lg font-normal text-center text-black opacity-60 pt-5">
-					Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-					accusantium <br /> doloremque laudantium, totam rem aperiam, eaque
-					ipsa quae ab.
-				</p>
+				<h5 className="text-black opacity-60 text-lg font-normal text-center">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat sed
+					similique hic inventore porro corrupti! Cum possimus sapiente,
+					voluptatum reiciendis totam nihil tenetur alias sint! Distinctio
+					veniam obcaecati facilis temporibus.
+				</h5>
 
 				<div className="mt-6 relative">
 					<div className="flex justify-center">
