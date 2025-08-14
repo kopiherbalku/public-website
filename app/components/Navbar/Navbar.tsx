@@ -14,9 +14,9 @@ interface NavigationItem {
 }
 
 const navigation: NavigationItem[] = [
-	{ name: "Home", href: "#", current: true },
-	{ name: "Products", href: "#products", current: false },
-	{ name: "Pricing", href: "#pricing", current: false },
+	{ name: "Home", href: "/", current: true },
+	{ name: "Products", href: "/products", current: false },
+	{ name: "Pricing", href: "/pricing", current: false },
 ];
 
 function classNames(...classes: string[]) {
@@ -29,9 +29,9 @@ const Navbar = () => {
 	return (
 		<Disclosure as="nav" className="navbar">
 			<>
-				<div className="mx-auto max-w-7xl px-6 md:py-4 lg:px-8">
+				<div className="mx-auto max-w-7xl px-6 md:py-2 lg:px-8">
 					<div className="relative flex h-20 items-center justify-between">
-						<div className="flex flex-1 items-center sm:items-stretch sm:justify-start">
+						<div className="flex flex-1 items-center align-center sm:items-stretch sm:justify-start">
 							{/* LOGO */}
 
 							<div className="flex flex-shrink-0 items-center">
