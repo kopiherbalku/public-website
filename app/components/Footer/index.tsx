@@ -32,15 +32,15 @@ const socialLinks: socialLinks[] = [
 
 const links: links[] = [
 	{
-		link: "#",
+		link: "/",
 		name: "Home",
 	},
 	{
-		link: "#products",
+		link: "/products",
 		name: "Products",
 	},
 	{
-		link: "#pricing",
+		link: "/pricing",
 		name: "Pricing",
 	},
 ];
