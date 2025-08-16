@@ -8,6 +8,14 @@ const components = {
 			<strong>{children}</strong>
 		</h1>
 	),
+	img: (props) => (
+		<Image
+			className="mx-auto my-4 block rounded-lg"
+			width={450}
+			height={1000}
+			{...(props as ImageProps)}
+		/>
+	),
 } satisfies MDXComponents;
 
 export function useMDXComponents(): MDXComponents {
