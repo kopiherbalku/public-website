@@ -11,42 +11,42 @@ const Aboutdata: datatype[] = [
 	{
 		imgSrc: "/assets/features/kopiHerbalPurwacleng.jpeg",
 		heading: "Kopi Herbal PurwaCleng",
-		href: "/products/kopi-herbal-purwacleng",
+		href: "/products/description/kopi-herbal-purwacleng",
 	},
 	{
 		imgSrc: "/assets/features/kopiHerbalGurah.jpeg",
 		heading: "Kopi Herbal Gurah",
-		href: "/products/kopi-herbal-gurah",
+		href: "/products/description/kopi-herbal-gurah",
 	},
 	{
 		imgSrc: "/assets/features/kopiHerbalGinseng.jpeg",
 		heading: "Kopi Herbal Rempah",
-		href: "/products/kopi-herbal-rempah",
+		href: "/products/description/kopi-herbal-rempah",
 	},
 	{
 		imgSrc: "/assets/features/kopiHerbalGinseng.jpeg",
 		heading: "Kopi Herbal Ginseng",
-		href: "/products/kopi-herbal-ginseng",
+		href: "/products/description/kopi-herbal-ginseng",
 	},
 	{
 		imgSrc: "/assets/features/kopiPremiumRobusta.jpeg",
 		heading: "Kopi Premium Robusta",
-		href: "/products/kopi-premium-robusta",
+		href: "/products/description/kopi-premium-robusta",
 	},
 	{
 		imgSrc: "/assets/features/kopiPremiumArabica.jpeg",
 		heading: "Kopi Premium Arabica",
-		href: "/products/kopi-premium-arabica",
+		href: "/products/description/kopi-premium-arabica",
 	},
 	{
 		imgSrc: "/assets/features/kopiPremiumSpecialBlend.jpeg",
 		heading: "Kopi Premium Special Blend",
-		href: "/products/kopi-premium-special-blend",
+		href: "/products/description/kopi-premium-special-blend",
 	},
 	{
 		imgSrc: "/assets/features/kopiPremiumLuwak.jpeg",
 		heading: "Kopi Premium Luwak Liar",
-		href: "/products/kopi-premium-luwak-liar",
+		href: "/products/description/kopi-premium-luwak-liar",
 	},
 ];
 

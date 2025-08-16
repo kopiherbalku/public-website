@@ -37,11 +37,9 @@ const Navbarin: React.FC = () => {
 		storeScroll();
 	}, []);
 	return (
-		<>
-			<div className="bg-white/20">
-				<Navbar />
-			</div>
-		</>
+		<div className="zbg-white/20">
+			<Navbar />
+		</div>
 	);
 };
 

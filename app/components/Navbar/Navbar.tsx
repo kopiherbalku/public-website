@@ -4,8 +4,6 @@ import Link from "next/link";
 import React from "react";
 import Drawer from "./Drawer";
 import Drawerdata from "./Drawerdata";
-import Signdialog from "./Signdialog";
-import Registerdialog from "./Registerdialog";
 
 interface NavigationItem {
 	name: string;

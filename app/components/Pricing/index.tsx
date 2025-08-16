@@ -104,7 +104,7 @@ const Pricing = () => {
 		<div id="pricing" className="bg-floral_white-600 relative">
 			<div className="mx-auto max-w-7xl sm:py-20 lg:px-8">
 				<h3 className="text-4xl sm:text-5xl font-semibold text-black text-center my-10">
-					Our Pricing Plan
+					Ikuti Program Reseller Kami
 				</h3>
 				<h5 className="text-black opacity-60 text-lg font-normal text-center">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat sed
