@@ -1,110 +1,63 @@
-"use client";
-import { SetStateAction, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const names = [
 	{
-		heading: "Lite",
-		price: 41,
-		subscriber: 0.5,
-		button: "Start free trial",
-		option: [
-			"Sed ut perspiciatis unde1",
-			"Sed ut perspiciatis unde2",
-			"Sed ut perspiciatis unde3",
-			"Sed ut perspiciatis unde4",
-		],
-		category: "yearly",
-		imgSrc: "/assets/pricing/starone.svg",
+		heading: "Kopi Herbal PurwaCleng",
+		imgSrc: "/assets/features/kopiHerbalPurwacleng.jpeg",
+		href: "https://wa.me/6281292775170?text=Halo,%0ASaya%20ingin%20memesan%20Kopi%20Herbal%20PurwaCleng.%20Apakah%20tersedia?%0ATerima%20Kasih",
+		price: 79000,
 	},
 	{
-		heading: "Basic",
-		price: 29,
-		subscriber: 0.5,
-		button: "Start free trial",
-		option: [
-			"Sed ut perspiciatis unde1",
-			"Sed ut perspiciatis unde2",
-			"Sed ut perspiciatis unde3",
-			"Sed ut perspiciatis unde4",
-		],
-		category: "yearly",
-		imgSrc: "/assets/pricing/startwo.svg",
+		heading: "Kopi Herbal Gurah",
+		imgSrc: "/assets/features/kopiHerbalGurah.jpeg",
+		href: "https://wa.me/6281292775170?text=Halo,%0ASaya%20ingin%20memesan%20Kopi%20Herbal%20Gurah.%20Apakah%20tersedia?%0ATerima%20Kasih",
+		price: 79000,
 	},
 	{
-		heading: "Plus",
-		price: 139,
-		subscriber: 0.5,
-		button: "Start free trial",
-		option: [
-			"Sed ut perspiciatis unde1",
-			"Sed ut perspiciatis unde2",
-			"Sed ut perspiciatis unde3",
-			"Sed ut perspiciatis unde4",
-		],
-		category: "yearly",
-		imgSrc: "/assets/pricing/starthree.svg",
+		heading: "Kopi Herbal Rempah",
+		imgSrc: "/assets/features/kopiHerbalGinseng.jpeg",
+		href: "https://wa.me/6281292775170?text=Halo,%0ASaya%20ingin%20memesan%20Kopi%20Herbal%20Rempah.%20Apakah%20tersedia?%0ATerima%20Kasih",
+		price: 79000,
 	},
 	{
-		heading: "Plus",
-		price: 139,
-		subscriber: 0.5,
-		button: "Start free trial",
-		option: [
-			"Sed ut perspiciatis unde1",
-			"Sed ut perspiciatis unde2",
-			"Sed ut perspiciatis unde3",
-			"Sed ut perspiciatis unde4",
-		],
-		category: "monthly",
-		imgSrc: "/assets/pricing/starone.svg",
+		heading: "Kopi Herbal Ginseng",
+		imgSrc: "/assets/features/kopiHerbalGinseng.jpeg",
+		href: "https://wa.me/6281292775170?text=Halo,%0ASaya%20ingin%20memesan%20Kopi%20Herbal%20Ginseng.%20Apakah%20tersedia?%0ATerima%20Kasih",
+		price: 79000,
 	},
 	{
-		heading: "Lite",
-		price: 41,
-		subscriber: 0.5,
-		button: "Start free trial",
-		option: [
-			"Sed ut perspiciatis unde1",
-			"Sed ut perspiciatis unde2",
-			"Sed ut perspiciatis unde3",
-			"Sed ut perspiciatis unde4",
-		],
-		category: "monthly",
-		imgSrc: "/assets/pricing/startwo.svg",
+		heading: "Kopi Premium Robusta",
+		imgSrc: "/assets/features/kopiPremiumRobusta.jpeg",
+		href: "https://wa.me/6281292775170?text=Halo,%0ASaya%20ingin%20memesan%20Kopi%20Premium%20Robusta.%20Apakah%20tersedia?%0ATerima%20Kasih",
+		price: 79000,
 	},
 	{
-		heading: "Basic",
-		price: 29,
-		subscriber: 0.5,
-		button: "Start free trial",
-		option: [
-			"Sed ut perspiciatis unde1",
-			"Sed ut perspiciatis unde2",
-			"Sed ut perspiciatis unde3",
-			"Sed ut perspiciatis unde4",
-		],
-		category: "monthly",
-		imgSrc: "/assets/pricing/starthree.svg",
+		heading: "Kopi Premium Arabica",
+		imgSrc: "/assets/features/kopiPremiumArabica.jpeg",
+		href: "https://wa.me/6281292775170?text=Halo,%0ASaya%20ingin%20memesan%20Kopi%20Premium%20Arabica.%20Apakah%20tersedia?%0ATerima%20Kasih",
+		price: 79000,
+	},
+	{
+		heading: "Kopi Premium Special Blend",
+		imgSrc: "/assets/features/kopiPremiumSpecialBlend.jpeg",
+		href: "https://wa.me/6281292775170?text=Halo,%0ASaya%20ingin%20memesan%20Kopi%20Premium%20Special%20Blend.%20Apakah%20tersedia?%0ATerima%20Kasih",
+		price: 79000,
+	},
+	{
+		heading: "Kopi Premium Luwak Liar",
+		imgSrc: "/assets/features/kopiPremiumLuwak.jpeg",
+		href: "https://wa.me/6281292775170?text=Halo,%0ASaya%20ingin%20memesan%20Kopi%20Premium%20Luwak%20Liar.%20Apakah%20tersedia?%0ATerima%20Kasih",
+		price: 79000,
 	},
 ];
 
 const Pricing = () => {
-	const [selectedCategory, setSelectedCategory] = useState("monthly");
-
-	const handleCategoryChange = (category: SetStateAction<string>) => {
-		setSelectedCategory(category);
-	};
-
-	const filteredData = names.filter(
-		(item) => item.category === selectedCategory
-	);
-
 	return (
 		<div id="pricing" className="bg-floral_white-600 relative">
-			<div className="mx-auto max-w-7xl sm:py-20 lg:px-8">
+			<div className="mx-auto max-w-7xl py-10 sm:py-20 lg:px-8">
 				<h3 className="text-4xl sm:text-5xl font-semibold text-black text-center my-10">
-					Ikuti Program Reseller Kami
+					Daftar Harga
 				</h3>
 				<h5 className="text-black opacity-60 text-lg font-normal text-center">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat sed
@@ -113,75 +66,32 @@ const Pricing = () => {
 					veniam obcaecati facilis temporibus.
 				</h5>
 
-				<div className="mt-6 relative">
-					<div className="flex justify-center">
-						<div className="bg-fawn-500 flex py-1 px-1 rounded-full ">
-							<h3
-								className={`text-xl font-medium cursor-pointer ${
-									selectedCategory === "yearly"
-										? "text-fawn-400 bg-white rounded-full py-2 px-4 sm:py-4 sm:px-16"
-										: "text-white py-2 px-4 sm:py-4 sm:px-16"
-								}`}
-								onClick={() => handleCategoryChange("yearly")}
-							>
-								Yearly
-							</h3>
-							<h3
-								className={`text-xl font-medium cursor-pointer ${
-									selectedCategory === "monthly"
-										? "text-fawn-400  bg-white rounded-full py-2 px-4 sm:py-4 sm:px-16"
-										: "text-white py-2 px-4 sm:py-4 sm:px-16"
-								}`}
-								onClick={() => handleCategoryChange("monthly")}
-							>
-								Monthly
-							</h3>
-						</div>
-					</div>
-				</div>
-
-				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-16 mx-5 gap-6">
-					{filteredData.map((item, index) => (
+				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 my-16 mx-5 gap-6">
+					{names.map((item, index) => (
 						<div
-							className="pt-10 pb-28 pl-10 pr-10 bg-white rounded-3xl bxshd relative cursor-pointer hover:bg-fawn-400 group"
+							className="p-5 bg-white rounded-3xl bxshd relative cursor-pointer hover:bg-fawn-400 group flex flex-col justify-between"
 							key={index}
 						>
-							<Image
-								src={item.imgSrc}
-								alt="star-image"
-								width={154}
-								height={154}
-								className="absolute bottom-0 right-0"
-							/>
-							<h4 className="text-4xl sm:text-5xl font-semibold mb-8 text-midnightblue group-hover:text-white">
+							<h4 className="text-center text-xl sm:text-xl font-semibold mb-8 text-midnightblue group-hover:text-white">
 								{item.heading}
 							</h4>
-							<button className="text-xl font-medium text-white w-full bg-fawn-400 border-fawn-400 hover:text-white group-hover:bg-fawn-500 group-hover:border-fawn-500 border-2 rounded-full py-4 px-12 mb-8">
-								{item.button}
-							</button>
-							<h2 className="text-4xl sm:text-5xl font-semibold text-midnightblue mb-3 group-hover:text-white">
-								${item.price}/<span className="text-lightgrey">mo</span>
-							</h2>
-							<p className="text-lg font-normal text-black group-hover:text-white">
-								${item.subscriber}
-								<span>/ Subscriber</span>
-							</p>
-							<p className="text-lg font-normal text-black opacity-40 mb-6 group-hover:text-white">
-								(per subscriber per month)
-							</p>
-							{item.option.map((content, index) => (
-								<div className="flex gap-4 pt-6" key={index}>
-									<Image
-										src="/assets/pricing/tick.svg"
-										alt="tick-image"
-										width={32}
-										height={32}
-									/>
-									<p className="text-lg font-medium text-black opacity-60 group-hover:text-translucentwhite">
-										{content}
-									</p>
-								</div>
-							))}
+							<div>
+								<Image
+									src={item.imgSrc}
+									alt={item.heading}
+									width={200}
+									height={200}
+									className="mx-auto my-4 block rounded-lg"
+								/>
+								<h2 className="text-xl text-center sm:text-2xl font-semibold text-midnightblue mb-3 group-hover:text-white">
+									Rp{item.price}
+								</h2>
+								<Link href={item.href} target="_blank">
+									<button className="text-lg font-medium text-white w-full bg-fawn-400 border-fawn-400 hover:text-white group-hover:bg-fawn-500 group-hover:border-fawn-500 border-2 rounded-full py-2 px-2">
+										Pesan Produk Ini
+									</button>
+								</Link>
+							</div>
 						</div>
 					))}
 				</div>
