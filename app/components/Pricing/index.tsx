@@ -6,49 +6,49 @@ const names = [
 		heading: "Kopi Herbal PurwaCleng",
 		imgSrc: "/assets/features/kopiHerbalPurwacleng.jpeg",
 		href: "https://wa.me/6281292775170?text=Halo,%0ASaya%20ingin%20memesan%20Kopi%20Herbal%20PurwaCleng.%20Apakah%20tersedia?%0ATerima%20Kasih",
-		price: 79000,
+		price: "79.000",
 	},
 	{
 		heading: "Kopi Herbal Gurah",
 		imgSrc: "/assets/features/kopiHerbalGurah.jpeg",
 		href: "https://wa.me/6281292775170?text=Halo,%0ASaya%20ingin%20memesan%20Kopi%20Herbal%20Gurah.%20Apakah%20tersedia?%0ATerima%20Kasih",
-		price: 79000,
+		price: "79.000",
 	},
 	{
 		heading: "Kopi Herbal Rempah",
 		imgSrc: "/assets/features/kopiHerbalGinseng.jpeg",
 		href: "https://wa.me/6281292775170?text=Halo,%0ASaya%20ingin%20memesan%20Kopi%20Herbal%20Rempah.%20Apakah%20tersedia?%0ATerima%20Kasih",
-		price: 79000,
+		price: "79.000",
 	},
 	{
 		heading: "Kopi Herbal Ginseng",
 		imgSrc: "/assets/features/kopiHerbalGinseng.jpeg",
 		href: "https://wa.me/6281292775170?text=Halo,%0ASaya%20ingin%20memesan%20Kopi%20Herbal%20Ginseng.%20Apakah%20tersedia?%0ATerima%20Kasih",
-		price: 79000,
+		price: "79.000",
 	},
 	{
 		heading: "Kopi Premium Robusta",
 		imgSrc: "/assets/features/kopiPremiumRobusta.jpeg",
 		href: "https://wa.me/6281292775170?text=Halo,%0ASaya%20ingin%20memesan%20Kopi%20Premium%20Robusta.%20Apakah%20tersedia?%0ATerima%20Kasih",
-		price: 79000,
+		price: "70.000",
 	},
 	{
 		heading: "Kopi Premium Arabica",
 		imgSrc: "/assets/features/kopiPremiumArabica.jpeg",
 		href: "https://wa.me/6281292775170?text=Halo,%0ASaya%20ingin%20memesan%20Kopi%20Premium%20Arabica.%20Apakah%20tersedia?%0ATerima%20Kasih",
-		price: 79000,
+		price: "120.000",
 	},
 	{
 		heading: "Kopi Premium Special Blend",
 		imgSrc: "/assets/features/kopiPremiumSpecialBlend.jpeg",
 		href: "https://wa.me/6281292775170?text=Halo,%0ASaya%20ingin%20memesan%20Kopi%20Premium%20Special%20Blend.%20Apakah%20tersedia?%0ATerima%20Kasih",
-		price: 79000,
+		price: "90.000",
 	},
 	{
 		heading: "Kopi Premium Luwak Liar",
 		imgSrc: "/assets/features/kopiPremiumLuwak.jpeg",
 		href: "https://wa.me/6281292775170?text=Halo,%0ASaya%20ingin%20memesan%20Kopi%20Premium%20Luwak%20Liar.%20Apakah%20tersedia?%0ATerima%20Kasih",
-		price: 79000,
+		price: "250.000",
 	},
 ];
 
@@ -60,10 +60,9 @@ const Pricing = () => {
 					Daftar Harga
 				</h3>
 				<h5 className="text-black opacity-60 text-lg font-normal text-center">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat sed
-					similique hic inventore porro corrupti! Cum possimus sapiente,
-					voluptatum reiciendis totam nihil tenetur alias sint! Distinctio
-					veniam obcaecati facilis temporibus.
+					Temukan cita rasa khas, manfaat kesehatan, dan pengalaman minum kopi
+					yang berbeda dari yang lain. Harga yang tertera sudah termasuk kemasan
+					eksklusif dan layanan pengiriman cepat ke seluruh Indonesia.
 				</h5>
 
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 my-16 mx-5 gap-6">

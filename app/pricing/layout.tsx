@@ -1,7 +1,7 @@
 import "../globals.css";
 
 export const metadata = {
-	title: "Paket Reseller - KopiHerbalKu",
+	title: "Daftar Harga - KopiHerbalKu",
 	description: "Kopi Herbal Terbaik Se-Indonesia",
 };
 
