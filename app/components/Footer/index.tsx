@@ -37,11 +37,11 @@ const links: links[] = [
 	},
 	{
 		link: "/products",
-		name: "Products",
+		name: "Produk",
 	},
 	{
 		link: "/pricing",
-		name: "Pricing",
+		name: "Daftar Harga",
 	},
 ];
 
