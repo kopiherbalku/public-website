@@ -33,16 +33,18 @@ const Navbar = () => {
 							{/* LOGO */}
 
 							<div className="flex flex-shrink-0 items-center">
-								<img
-									className="block h-20 w-25 lg:hidden"
-									src={"/assets/logo/logo_removed.svg"}
-									alt="kopi-logo"
-								/>
-								<img
-									className="hidden h-20 w-25 lg:block"
-									src={"/assets/logo/logo_removed.svg"}
-									alt="kopi-logo"
-								/>
+								<Link href="/">
+									<img
+										className="block h-20 w-25 lg:hidden"
+										src={"/assets/logo/logo_removed.svg"}
+										alt="kopi-logo"
+									/>
+									<img
+										className="hidden h-20 w-25 lg:block"
+										src={"/assets/logo/logo_removed.svg"}
+										alt="kopi-logo"
+									/>
+								</Link>
 							</div>
 
 							{/* LINKS */}
