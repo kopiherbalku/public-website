@@ -4,6 +4,7 @@ import Features from "./components/Features/index";
 import Business from "./components/Business/index";
 import Payment from "./components/Payment/index";
 import Pricing from "./components/Pricing/index";
+import Resell from "./components/Resell/index";
 
 export default function Home() {
 	return (
@@ -11,9 +12,10 @@ export default function Home() {
 			<Banner />
 			{/* <People /> */}
 			<Features />
-			{/* <Business /> */}
-			{/* <Payment /> */}
-			{/* <Pricing /> */}
+			{/* <Business />
+			<Payment />
+			<Pricing /> */}
+			<Resell />
 		</main>
 	);
 }
