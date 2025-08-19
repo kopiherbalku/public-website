@@ -42,11 +42,10 @@ const Resell = () => {
 					Bergabung sekarang dan mulai perjalanan sukses Anda bersama
 					KopiHerbalku!
 				</p>
-
 				<Link
 					target="_blank"
 					href="https://wa.me/6281292775170?text=Halo,%0ASaya%20ingin%20mendaftar%20program%20kemitraan.%20Apakah%20bisa?%0ATerima%20Kasih"
-					className="inline-block bg-fawn-500 hover:bg-fawn-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300"
+					className="inline-block bg-fawn-500 hover:bg-fawn-600 text-white font-semibold py-3 px-6 rounded-xl transition-colors duration-300"
 				>
 					Daftar Sekarang
 				</Link>
