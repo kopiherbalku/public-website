@@ -33,8 +33,9 @@ const Resell = () => {
 						<strong>Kantor Pusat</strong>
 					</li>
 					<li>
-						Program <strong>"Reseller Gets Reseller"</strong> – dapatkan{" "}
-						<strong>5% komisi</strong> dari reseller yang Anda referensikan
+						Program <strong>&quot;Reseller Gets Reseller&quot;</strong> -
+						dapatkan <strong>5% komisi</strong> dari reseller yang Anda
+						referensikan
 					</li>
 				</ul>
 
