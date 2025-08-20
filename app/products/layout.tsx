@@ -10,5 +10,5 @@ export default function ProductsLayout({
 }: {
 	children: React.ReactNode;
 }) {
-	return <main className="px-40">{children}</main>;
+	return <main className="px-5 md:px-20 xl:px-40">{children}</main>;
 }

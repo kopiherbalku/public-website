@@ -66,7 +66,7 @@ const Features = () => {
 					{Aboutdata.map((item, i) => (
 						<div
 							key={i}
-							className="bg-white rounded-2xl p-5 featureShadow flex flex-col justify-between"
+							className="bg-white rounded-2xl p-5 featureShadow flex flex-col justify-between items-center"
 						>
 							<div>
 								<Image
