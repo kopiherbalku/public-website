@@ -1,6 +1,7 @@
 import "./globals.css";
 import Navbar from "./components/Navbar/index";
 import Footer from "./components/Footer/index";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata = {
 	title: "KopiHerbalku - Kopi Herbal Terbaik Se-Indonesia",
@@ -15,6 +16,7 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body className="flex flex-col h-screen justify-between">
+				<Analytics />
 				<Navbar />
 				{children}
 				<Footer />
